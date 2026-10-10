@@ -137,7 +137,7 @@ window.dominoHumanPlay=()=>confirmMove(G?.turn??0,null,!!G?.extra);window.domino
 <script>
 // A partida começa com uma peça numérica escolhida pelo jogador.
 document.head.insertAdjacentHTML('beforeend','<style>.board-empty{pointer-events:none}#board{cursor:grab}#board.is-panning{cursor:grabbing;user-select:none;touch-action:none}#board.is-panning button{cursor:grabbing!important}#board.is-panning .board-inner{transition:none!important}#boardInner{transform:translate(calc(-50% + var(--camera-x,0px)),calc(-50% + var(--camera-y,0px))) scale(var(--camera-scale,1))!important}.operational-mark{position:absolute;left:2px;top:-6px;z-index:3;border-radius:5px;background:#142820;color:#eaffbc;padding:2px 4px;font:700 9px "DM Mono",monospace}</style>');
-const startObserver=new MutationObserver(()=>{const inner=document.getElementById('boardInner'), hand=document.getElementById('hand');if(!inner||document.querySelector('[data-start-move]'))return;const chosen=hand?.querySelector('.tile.selected');if(!chosen||inner.querySelector('.tile')||!window.dominoStartAllowed(chosen.dataset.tile))return;const button=document.createElement('button');button.className='edge-label target';button.dataset.startMove='1';button.textContent='INICIAR MESA';button.style.cssText='left:50%;top:60%';button.onclick=()=>window.pickEdge('start');inner.appendChild(button)});startObserver.observe(document.body,{childList:true,subtree:true});
+const startObserver=new MutationObserver(()=>{const boardInner=document.getElementById('boardInner'), hand=document.getElementById('hand');if(!boardInner||document.querySelector('[data-start-move]'))return;const chosen=hand?.querySelector('.tile.selected');if(!chosen||boardInner.querySelector('.tile')||!window.dominoStartAllowed(chosen.dataset.tile))return;const button=document.createElement('button');button.className='edge-label target';button.dataset.startMove='1';button.textContent='INICIAR MESA';button.style.cssText='left:50%;top:60%';button.onclick=()=>window.pickEdge('start');boardInner.appendChild(button)});
 let cameraX=0,cameraY=0;
 // Câmera no espaço de tela: as coordenadas e conexões das peças seguem no espaço do tabuleiro.
 const board=document.getElementById('board'), inner=document.getElementById('boardInner');
@@ -158,6 +158,7 @@ board.addEventListener('click',e=>{if(!suppressClick)return;e.preventDefault();e
 const endPointer=e=>{points.delete(e.pointerId);if(pinch){pinch=null;if(points.size===1){const [id,p]=[...points.entries()][0];drag={id,x:p.x,y:p.y,startX:p.x,startY:p.y,moved:false}}else drag=null}else if(drag?.id===e.pointerId){if(drag.moved)setTimeout(()=>{suppressClick=false},0);drag=null}if(!points.size)board.classList.remove('is-panning')};board.addEventListener('pointerup',endPointer);board.addEventListener('pointercancel',endPointer);board.addEventListener('lostpointercapture',endPointer);
 document.getElementById('startBtn').addEventListener('click',()=>{cameraX=0;cameraY=0;applyPan()});
 applyPan();
+startObserver.observe(document.body,{childList:true,subtree:true});
 </script>
 <script>
 const matchSelect=document.getElementById('matchSelect'),humanCountSelect=document.getElementById('humanCountSelect');

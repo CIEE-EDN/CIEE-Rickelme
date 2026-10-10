@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Dominó 2 — O dominó evoluiu</title>
+  <desc id="desc">Peças de dominó sobre uma mesa verde escura, com os modos clássico brasileiro e Dominó 2.</desc>
+  <defs>
+    <radialGradient id="felt"><stop stop-color="#266153"/><stop offset="1" stop-color="#101a1b"/></radialGradient>
+    <linearGradient id="piece" x2="0" y2="1"><stop stop-color="#fffaf0"/><stop offset="1" stop-color="#e7dbc0"/></linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#000" flood-opacity=".42"/></filter>
+  </defs>
+  <rect width="1200" height="630" rx="28" fill="url(#felt)"/>
+  <path d="M0 500 1200 170M0 570 1200 240" stroke="#ffffff" stroke-opacity=".035" stroke-width="2"/>
+  <text x="84" y="116" fill="#c7f36b" font-family="Arial,sans-serif" font-size="22" font-weight="700" letter-spacing="7">JOGO DE DOMINÓ NO NAVEGADOR</text>
+  <text x="80" y="245" fill="#f0f4e9" font-family="Arial,sans-serif" font-size="88" font-weight="800">DOMINÓ <tspan fill="#c7f36b">2</tspan></text>
+  <text x="86" y="302" fill="#c7d3c9" font-family="Arial,sans-serif" font-size="30">O dominó evoluiu.</text>
+  <text x="86" y="390" fill="#f0f4e9" font-family="Arial,sans-serif" font-size="23">Clássico brasileiro · Modo especial · Multiplayer local</text>
+  <g filter="url(#shadow)" transform="translate(690 192) rotate(-11)">
+    <rect width="210" height="105" rx="15" fill="url(#piece)" stroke="#d2c4a7" stroke-width="3"/><path d="M105 5v95" stroke="#aa9a78" stroke-width="3"/>
+    <g fill="#1a2a26"><circle cx="35" cy="30" r="7"/><circle cx="70" cy="75" r="7"/><circle cx="35" cy="75" r="7"/><circle cx="140" cy="30" r="7"/><circle cx="175" cy="30" r="7"/><circle cx="140" cy="53" r="7"/><circle cx="175" cy="53" r="7"/><circle cx="140" cy="76" r="7"/><circle cx="175" cy="76" r="7"/></g>
+  </g>
+  <g filter="url(#shadow)" transform="translate(895 317) rotate(9)">
+    <rect width="210" height="105" rx="15" fill="url(#piece)" stroke="#d2c4a7" stroke-width="3"/><path d="M105 5v95" stroke="#aa9a78" stroke-width="3"/>
+    <g fill="#1a2a26"><circle cx="35" cy="30" r="7"/><circle cx="70" cy="75" r="7"/><circle cx="35" cy="75" r="7"/><circle cx="140" cy="30" r="7"/><circle cx="175" cy="76" r="7"/></g>
+  </g>
+  <rect x="84" y="475" width="210" height="52" rx="26" fill="#c7f36b"/><text x="189" y="509" text-anchor="middle" fill="#16221c" font-family="Arial,sans-serif" font-size="18" font-weight="700">JOGUE AGORA</text>
+</svg>

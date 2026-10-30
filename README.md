@@ -3,31 +3,36 @@
 Jogo de dominó brasileiro para navegador, com modo clássico, Dominó 2 e multiplayer local.
 ## Desenvolvimento com Inteligência Artificial
 
-O **Dominó 2** foi desenvolvido com o auxílio de ferramentas de Inteligência Artificial, tendo o **OpenAI Codex** como principal ferramenta durante o processo de programação.
+## Desenvolvimento com IA
 
-A ideia, o conceito do jogo, as regras e as funcionalidades foram definidos por mim. Utilizei o Codex como assistente de desenvolvimento para transformar essas ideias em código, implementar funcionalidades, analisar problemas e aprimorar o funcionamento do projeto.
+Este projeto foi desenvolvido com auxílio de Inteligência Artificial, principalmente o **OpenAI Codex**, utilizado para auxiliar na programação, implementação de funcionalidades, correção de erros e aprimoramento do jogo.
+
+<details>
+<summary>Ver detalhes sobre o processo de desenvolvimento com IA</summary>
 
 ### Como utilizei o Codex
 
-O desenvolvimento aconteceu de forma iterativa, dividindo o projeto em etapas:
+O OpenAI Codex foi minha principal ferramenta de desenvolvimento assistido por IA. Por meio de instruções e solicitações, utilizei-o para:
 
-- **Planejamento:** definição da proposta do jogo, suas regras, funcionalidades e experiência desejada.
-- **Geração de código:** utilização do Codex para criar estruturas, implementar funcionalidades e desenvolver partes do jogo.
-- **Correções e melhorias:** análise de erros, identificação de problemas e solicitação de alterações no código.
-- **Aprimoramento da lógica:** ajustes nas regras, nas jogadas e no comportamento dos adversários controlados por inteligência artificial.
-- **Testes:** verificação do funcionamento das funcionalidades e identificação de situações que precisavam de melhorias.
-- **Evolução contínua:** novas instruções eram fornecidas ao Codex conforme o projeto avançava, permitindo aperfeiçoar o jogo progressivamente.
+- Gerar e estruturar códigos.
+- Implementar funcionalidades do jogo.
+- Desenvolver e ajustar a lógica das partidas.
+- Identificar e corrigir erros.
+- Aprimorar o funcionamento e a organização do projeto.
+- Realizar melhorias progressivas conforme os testes.
 
-### Utilização de outras ferramentas de IA
+### Processo de desenvolvimento
 
-Além do Codex, também considero outras ferramentas de inteligência artificial como apoio ao desenvolvimento, incluindo ChatGPT, Claude, Gemini e Manus, principalmente para auxiliar na análise de ideias, resolução de problemas e planejamento.
+O desenvolvimento ocorreu de maneira iterativa: eu definia o que queria implementar, orientava o Codex, analisava os resultados, testava as funcionalidades e solicitava correções quando necessário.
 
-### Minha participação no projeto
+### Outras ferramentas
 
-A inteligência artificial foi utilizada como ferramenta de apoio, mas as decisões sobre o projeto permaneceram sob minha responsabilidade.
+Também considerei e utilizei ferramentas como ChatGPT, Claude, Gemini e Manus como apoio para planejamento, análise e resolução de problemas.
 
-Fui responsável por idealizar o jogo, definir o que deveria ser desenvolvido, orientar as ferramentas de IA, avaliar os resultados, identificar problemas e solicitar correções e melhorias.
+### Minha participação
 
-**O objetivo do projeto também foi explorar como ferramentas de IA podem acelerar o desenvolvimento de software, permitindo transformar ideias em aplicações funcionais mesmo sem executar manualmente todas as etapas de programação.**
+Fui responsável pela idealização do projeto, definição das regras e funcionalidades, elaboração das instruções para as ferramentas de IA, avaliação dos resultados e direcionamento das melhorias.
 
-Este projeto representa minha experiência prática com desenvolvimento de software e utilização de inteligência artificial como ferramenta de produtividade e criação.
+A IA atuou como assistente de desenvolvimento, enquanto as decisões e a direção do projeto permaneceram sob minha responsabilidade.
+
+</details>

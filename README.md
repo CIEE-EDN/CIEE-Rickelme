@@ -34,4 +34,15 @@ Fui responsável pela idealização do projeto, definição das regras e funcion
 
 A IA atuou como assistente de desenvolvimento, enquanto as decisões e a direção do projeto permaneceram sob minha responsabilidade.
 
+## 🌐 Outros Projetos
+
+Também desenvolvi um site para apresentar conteúdos e atividades relacionados ao CIEE.
+
+<details>
+<summary>🔗 Ver projeto CIEE</summary>
+
+**CIEE — Projeto pessoal**
+
+[🌐 Acessar o site](https://ciee-edn.github.io/CIEE-Rickelme/)
+
 </details>
